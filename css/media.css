@@ -1,0 +1,260 @@
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 500px) {
+
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .container {
+        max-width: 335px;
+        margin: 0 auto;
+    }
+
+    .header-wrp {
+        padding: 0;
+        min-height: 70px;
+    }
+
+    .logo-link {
+        gap: 9.48px;
+    }
+
+    .logo-left {
+        height: 30px;
+        width: 30px;
+    }
+
+    .logo-right {
+        height: 12px;
+        width: 88px;
+    }
+
+    .sign-wrp {
+        gap: 18px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .sign-up-btn {
+        display: none;
+    }
+
+    .main-screen-wrp {
+        box-shadow: 0px -4px 4px 0px #12214D;
+        flex-direction: column-reverse;
+        padding: 29px 0 0 0;
+    }
+
+    .main-screen-img-wrp {
+        margin-left: 0;
+    }
+
+    .main-screen-img {
+        height: 232px;
+        width: 335px;
+        border-radius: 12.5px;
+    }
+
+    .main-screen-img-wrp::before {
+        display: none;
+    }
+
+    .main-screen-content {
+        max-width: 335px;
+        width: 100%;
+        margin-top: 26px;
+        align-items: center;
+    }
+
+    .main-screen-title {
+        font-size: 31px;
+        font-weight: 700;
+        line-height: 37px;
+        text-align: left;
+    }
+
+    .main-screeen-text {
+        margin: 0 0 26px 0;
+    }
+
+    .main-screen-btn {
+        width: 335px
+    }
+
+    .features {
+        margin: 0 0 71px 0;
+    }
+
+    .features-title {
+        margin: 0;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: left;
+    }
+
+    .features-text {
+        margin: 20px 0 40px 0;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .features-items {
+        gap: 35px;
+    }
+
+    .features-item {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 27.5px;
+    }
+
+    .features-item-text {
+        align-items: flex-start;
+    }
+
+    .features-subtitle {
+        margin: 0 0 9px 0;
+    }
+
+    .features-details {
+        font-size: 14px;
+        line-height: 19.6px;
+        text-align: left;
+    }
+
+    .details {
+        margin: 0;
+    }
+
+    .details-items {
+        gap: 60px;
+    }
+
+    .details-title {
+        margin: 0 0 20px 0;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .details-text {
+        margin: 0 0 30px 0;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .pricing {
+        height: 875px;
+    }
+
+    .pricing-content {
+        padding: 230px 0 0 0;
+        margin: 0 0 59px 0;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .pricing-title {
+        font-size: 30px;
+        line-height: 35px;
+        text-align: left;
+        margin: 0 0 20px 0;
+    }
+
+    .pricing-text {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .pricing-card {
+        height: 358px;
+        max-width: 280px;
+        width: 100%;
+    }
+
+    .pricing-card-title {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .pricing-card-text {
+        font-size: 13px;
+        line-height: 18px;
+        padding-bottom: 30px;
+    }
+
+    .pricing-card-content {
+        padding: 32px 36px;
+    }
+
+    .price-descr {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .promo-companies {
+        display: none;
+    }
+
+    .promo-sign-in-bg {
+        display: none;
+    }
+
+    .form-authorization {
+        width: 335px;
+    }
+
+    .promo-sign-in {
+        margin: 35px 0 35px 0;
+    }
+
+    .footer-list-menu {
+        display: none;
+    }
+
+    .footer-wrp {
+        padding: 31px 0px 31px 0px;
+    }
+
+    .footer-logo-img {
+        height: 24px;
+        width: 125px;
+
+    }
+
+
+
+    .menu-btn {
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    .menu-btn span {
+        width: 24px;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #8794BA;
+        transition: all 0.5s;
+    }
+
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+}

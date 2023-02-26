@@ -18,7 +18,7 @@ document.querySelector(".form-auth-btn").onclick = function () {
 };
 
 // Рейтинг со звездочками
-const form = document.querySelector('.promo-stars-rating');
+const form = document.querySelector('.form-stars-rating');
 const ratingStars = form.querySelectorAll('.rating-star-input');
 
 ratingStars.forEach((radio) => {

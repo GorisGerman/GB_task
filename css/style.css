@@ -16,9 +16,8 @@ body {
     background-image: url("../img/header/header-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
     min-height: 815px;
-    margin: 0 0 38px 0;
+    margin-bottom: 38px;
 }
 
 .container {
@@ -29,6 +28,7 @@ body {
 .logo-link {
     display: flex;
     gap: 12.63px;
+    align-items: center;
 }
 
 .logo-left {
@@ -111,19 +111,17 @@ body {
 
 .sign-up-btn:hover {
     background: #ef2a82;
-    color: #172755;
+    color: white;
     border: 1px solid #ef2a82;
-
 }
 
 .main-screen-wrp {
     display: flex;
     align-items: center;
-    padding-left: calc((100% - 1210px) / 2 + 15px);
+    padding-left: calc((100% - 1180px) / 2 + 15px);
     overflow-x: hidden;
     column-gap: 81px;
     padding-top: 71px;
-    padding-bottom: 60px;
 }
 
 .main-screen-content {
@@ -133,7 +131,6 @@ body {
     flex-shrink: 0;
     max-width: 550px;
     width: 100%;
-    margin-bottom: 78px;
 }
 
 .main-screen-title {
@@ -148,7 +145,6 @@ body {
     margin: 0 0 49px 0;
     font-size: 18px;
     line-height: 27px;
-
 }
 
 .main-screen-btn {
@@ -261,9 +257,8 @@ body {
 }
 
 .features-details {
-    height: 44px;
+    min-height: 44px;
     font-size: 16px;
-    font-weight: 400;
     line-height: 22px;
     text-align: center;
 }
@@ -321,8 +316,7 @@ body {
     background-image: url("../img/pricing/price-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
-    min-height: 1069px;
+    height: 1069px;
 }
 
 .pricing-content {
@@ -352,8 +346,14 @@ body {
 
 .pricing-cards {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    gap: 20px;
+}
+
+.pricing-cards::-webkit-scrollbar {
+    display: none;
 }
 
 .pricing-card {
@@ -437,10 +437,6 @@ body {
     line-height: 1.375;
 }
 
-.promo {
-    min-height: 740px;
-}
-
 .promo-companies-wrp {
     display: flex;
     flex-wrap: wrap;
@@ -480,7 +476,7 @@ body {
     min-height: 475px;
     max-width: 428px;
     width: 100%;
-    margin: 109px 0 0 0;
+    margin: 109px 0 156px 0;
 }
 
 .promo-icon {
@@ -561,7 +557,7 @@ body {
     color: #8989a2;
 }
 
-.promo-stars-rating {
+.form-stars-rating {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -597,6 +593,11 @@ body {
     content: url(../img/promo/star.svg);
 }
 
+.rating-area:not(:checked)>label:hover,
+.rating-area:not(:checked)>label:hover~label {
+    content: url(../img/promo/star.svg);
+}
+
 .promo-stars-text {
     width: 336px;
     padding-top: 16px;
@@ -617,8 +618,8 @@ body {
 .footer-wrp {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 64px 0px 60px 0px;
+    justify-content: space-between;
     align-items: center;
 }
 
