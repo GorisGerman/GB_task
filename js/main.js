@@ -1,3 +1,11 @@
+// Бургер меню
+
+const burgerMenu = document.querySelector('.menu-btn');
+
+burgerMenu.addEventListener('click', function (e) {
+    document.querySelector('.header').classList.toggle('open');
+});
+
 // Проверка пароля
 
 document.querySelector(".form-auth-btn").onclick = function () {

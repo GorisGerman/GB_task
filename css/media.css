@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
     .header {
         margin-bottom: 50px;
@@ -36,12 +36,70 @@
         gap: 18px;
     }
 
-    .nav-list {
+    .sign-up-btn {
         display: none;
     }
 
-    .sign-up-btn {
-        display: none;
+    .menu-btn {
+        display: block;
+        width: 24px;
+        height: 24px;
+        z-index: 2;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .menu-btn:hover span {
+        background-color: #EF2A82;
+    }
+
+    .menu-btn span {
+        width: 24px;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #8794BA;
+    }
+
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+
+    .header.open .nav-list {
+        transform: translateX(100%);
+    }
+
+    .nav-list {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+        top: 72px;
+        left: -100%;
+        background-color: #EF2A82;
+        width: 100%;
+        z-index: 3;
+        transition: all 0.5s;
+    }
+
+    .nav-list-item {
+        margin: 25px;
+    }
+
+    .nav-list-item a {
+        color: #FFF;
+        display: block;
+    }
+
+    .nav-list-item a:hover {
+        background-color: #FFF;
+        color: #EF2A82;
     }
 
     .main-screen-wrp {
@@ -226,35 +284,5 @@
         height: 24px;
         width: 125px;
 
-    }
-
-
-
-    .menu-btn {
-        display: block;
-        width: 24px;
-        height: 24px;
-        position: relative;
-        z-index: 2;
-        overflow: hidden;
-    }
-
-    .menu-btn span {
-        width: 24px;
-        height: 3px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #8794BA;
-        transition: all 0.5s;
-    }
-
-    .menu-btn span:nth-of-type(2) {
-        top: calc(50% - 5px);
-    }
-
-    .menu-btn span:nth-of-type(3) {
-        top: calc(50% + 5px);
     }
 }
